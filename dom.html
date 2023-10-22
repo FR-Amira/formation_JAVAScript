@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<style>
+    .box{
+        width: 500px;
+        height: 500px;
+        background: blue;
+    }
+
+ .text {
+    display: none;
+   }
+</style>
+
+</head>
+<body>
+
+<div class="box"> hello hello </div>
+
+<button onclick="changebox()">click</button>
+
+<p> Développement web.<p class="text"> Le développement web fait partie des compétences les plus prisées. 
+    Fait singulier, les développeurs ont généralement le choix face aux recruteurs, 
+    qui peine à recruter. Ils sont prêt à verser des salaires importants à
+    ces professionnels spécialisés, et c’est mérité : les bons développeurs possèdent 
+    des connaissances poitues dans leur domaine. L’actualité du développement est riche, 
+    entre les nouveautés des langages informatiques et l’évolution des outils : framework, 
+    environnement de développement (IDE)… Qu’ils soient experts de la dans la programmation
+     orientée objet (Objective-C…) ou qu’ils connaissent par cœur les spécificités du HTML5, 
+     CSS3, Java, PHP, Swift ou Python, les développeurs informatiques sont de plus en plus 
+     spécialisés. Certains s’orientent vers le développement web, d’autres vers
+      le développement d’applications mobiles iOS ou Android. Cette rubrique du blog permet 
+      aux développeurs de se tenir au courant de l’actualité de leur secteur et des outils 
+      qu’ils utilisent au quotidien.</p>
+</p>
+
+<button id="more" onclick="parg()">show more</button>
+
+
+
+<script>
+    // affichage box 
+console.log(document.querySelector(".box"));
+
+// changer style et text de class box eli fi div 
+
+let boxHTML = document.querySelector(".box");
+//changebox();
+function changebox(){
+boxHTML.style.background="red";
+boxHTML.style.width="200px";
+boxHTML.style.height="200px";
+boxHTML.innerHTML="bonjour tout les mondes" ;
+
+}
+
+// kif na3ml click button etbadel mara etra text w mara non w esm button endlo en parrallel 
+let defineParag= document.querySelector(".text");
+
+let buttonshowmore=document.querySelector("#more");
+
+let pvisible = false ;
+
+function parg(){
+  if(pvisible==true)
+  {
+    defineParag.style.display= "none" ;
+    pvisible= false;
+    buttonshowmore.innerText="show more";
+     
+  } else {
+      defineParag.style.display= "block" ;
+      pvisible =true;
+      buttonshowmore.innerText="show less";
+  }
+  
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

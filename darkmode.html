@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>darKmode</title>
+
+
+
+</head>
+<body>
+
+<p>
+Développement web.Le développement web fait partie des compétences les plus prisées. 
+        Fait singulier, les développeurs ont généralement le choix face aux recruteurs, 
+        qui peine à recruter. Ils sont prêt à verser des salaires importants à
+        ces professionnels spécialisés, et c’est mérité : les bons développeurs possèdent 
+        des connaissances poitues dans leur domaine. L’actualité du développement est riche, 
+        entre les nouveautés des langages informatiques et l’évolution des outils : framework, 
+        environnement de développement (IDE)… Qu’ils soient experts de la dans la programmation
+         orientée objet (Objective-C…) ou qu’ils connaissent par cœur les spécificités du HTML5, 
+         CSS3, Java, PHP, Swift ou Python, les développeurs informatiques sont de plus en plus 
+         spécialisés. Certains s’orientent vers le développement web, d’autres vers
+          le développement d’applications mobiles iOS ou Android. Cette rubrique du blog permet 
+          aux développeurs de se tenir au courant de l’actualité de leur secteur et des outils 
+          qu’ils utilisent au quotidien.
+    
+</p>
+
+<button id="dark" onclick="godark()">Dark mode</button>
+
+
+<script>
+let button = document.querySelector("#dark");
+
+function godark(){
+    if (document.body.style.color=="white")
+    {
+        document.body.style.color= "black";
+        document.body.style.background="white";
+        button.innerText = "go dark";
+    }
+else {
+    document.body.style.color= "white";
+        document.body.style.background="black";
+        button.innerText = "go light";
+}
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
